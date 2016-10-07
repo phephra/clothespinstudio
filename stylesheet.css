@@ -1,0 +1,77 @@
+@IMPORT 'https://fonts.googleapis.com/css?family=Roboto';
+
+@BLACK:         #000000;
+@WHITE:         #FFFFFF;
+@GREY:          #878786;
+@LIGHT-GREY:    #F0F0F0;
+
+@PURPLE:        #ad34e5;
+@PINK:          #ff0080;
+@AZURE:         #0098f8;
+@GREEN:         #00B4A6;
+@LIGHT-GREEN:   #00e38d;
+@RED:           #ff4834;
+@YELLOW:        #ffd748;
+
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+// HEADER
+
+header {
+    margin: auto;   
+    
+}
+
+.navbar_header {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar {    
+    font-variant: small-caps; 
+    
+    li{
+            list-style: none;
+            margin-left: 50px;
+            border-bottom: 2px solid @WHITE;
+            .animate(0.2s);
+            
+            &:hover{
+                border-bottom: 2px solid @BLACK;
+            }
+            
+            &.active{
+                border-bottom: 2px solid @GREEN;
+                color: @GREEN;
+            }
+    }
+}
+
+#menu {
+    justify-content: space-around;
+}
+
+
+
+// CONTENUTO
+
+.nome {
+    font-size: 140px;
+    font-weight: bold;
+        
+}
+
+.col-sm-4 {
+    margin-bottom: 50px;
+    margin-top: 50px;    
+}
+
+
+
