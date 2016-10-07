@@ -37,10 +37,12 @@ header {
 .navbar {    
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
     
     li{
             list-style: none;
             margin-left: 50px;
+            text-align: center;
             border-bottom: 2px solid @WHITE;
             .animate(0.2s);
             
