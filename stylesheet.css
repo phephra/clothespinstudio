@@ -73,8 +73,7 @@ header {
 .nomi {
     float: left;
     padding-top: 38px;
-    padding-left: 38px;
-    padding-right: 38px;
+    width: 20%;
     font-weight: bold;
     font-size: 18px;
 }
