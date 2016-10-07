@@ -1,4 +1,5 @@
 @IMPORT 'https://fonts.googleapis.com/css?family=Roboto';
+@IMPORT 'https://fonts.googleapis.com/css?family=Titillium+Web';
 
 @BLACK:         #000000;
 @WHITE:         #FFFFFF;
@@ -15,7 +16,7 @@
 
 body {
     background-color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     
 }
 
@@ -32,6 +33,7 @@ header {
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .navbar {    
