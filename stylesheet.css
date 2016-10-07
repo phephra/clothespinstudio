@@ -62,6 +62,23 @@ header {
 
 // CONTENUTO
 
+.col-sm-12 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+    
+    
+}
+
+.nomi {
+    float: left;
+    padding-top: 38px;
+    padding-left: 38px;
+    padding-right: 38px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .nome {
     font-size: 140px;
     font-weight: bold;
@@ -72,6 +89,8 @@ header {
     margin-bottom: 50px;
     margin-top: 50px;    
 }
+
+
 
 
 
