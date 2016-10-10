@@ -13,7 +13,7 @@
 }
 
 .logo {
-    width: 500px;
+    width: 280px;
     font-size: 32px;
     font-weight: 700;
     color: black;
@@ -45,7 +45,13 @@
     padding-bottom: 6px;
     font-family: "GlacialIndifferenceBold", sans-serif;
     margin-left: 20px;
+    @include small {
+    padding-top: 25px;
+  }
 }
+
+
+
 @media only screen and (max-width: 766px) {
     .main_h {
         padding-top: 25px;
@@ -161,6 +167,12 @@ nav ul a {
     margin-top: 60px;
     margin-bottom: 60px;
     width: 100%;
+}
+
+#jeep {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    position: relative;
 }
 
 #logo1 {
