@@ -1,57 +1,93 @@
 <! DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Clothespin Studio</title>
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <header>            
-                <div class="navbar_header">
-                    <div id="teamtitle">Clothespin Studio</div>
-                </div>
-                <nav class="navbar navbar-default">
-                    <div class="container" id="menu">                     
-                    
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Chi siamo</a></li>
-                            <li><a href="https://github.com/phephra/clothespinstudio">GitHub</a></li>
-                            <li><a href="http://www.inchiostrofresco.it/wp-content/uploads/2014/07/Troisi-Benigni.jpg">Un fiorino</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            
-        </header>
-        <section class="container">
-            <div class="nome">
-                <h1>Chi siamo</h1>            
+
+<html>
+    
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+    
+<body>
+
+    
+<header class="main_h">
+    <div class="row">
+        <a class="logo" href="#">Clothes Pin Studio</a>
+        <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Chi siamo</a></li>
+                <li><a href="#">Meet uClip</a></li>
+                <li><a href="#">GitHub</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+// Sticky Header
+$(window).scroll(function() {
+
+    if ($(window).scrollTop() > 100) {
+        $('.main_h').addClass('sticky');
+    } else {
+        $('.main_h').removeClass('sticky');
+    }
+});
+
+// Mobile Navigation
+$('.mobile-toggle').click(function() {
+    if ($('.main_h').hasClass('open-nav')) {
+        $('.main_h').removeClass('open-nav');
+    } else {
+        $('.main_h').addClass('open-nav');
+    }
+});
+
+$('.main_h li a').click(function() {
+    if ($('.main_h').hasClass('open-nav')) {
+        $('.navigation').removeClass('open-nav');
+        $('.main_h').removeClass('open-nav');
+    }
+});
+
+// Navigation Scroll
+$('nav a').click(function(event) {
+    var id = $(this).attr("href");
+    var offset = 70;
+    var target = $(id).offset().top - offset;
+    $('html, body').animate({
+        scrollTop: target
+    }, 500);
+    event.preventDefault();
+});
+
+</script>
+
+<!-- PERSONA 1 -->
+<section class="container">
+    <div class="row" id="top-header">
+        <div class="col-sm-12" id=logo1>Clothes Pin Studio</div>
+    </div>
+        <div class="row" id="slider">
+            <div class="col-sm-12">
+                <img class="img-responsive" src="http://www.bjork.fr/IMG/jpg/bjork-2016-family-avatar-02-andrew-thomas-huang.jpg">
             </div>
-            <!-- FOTO DI GRUPPO -->
-            <div class="row">
-                <div class="col-sm-12">                    
-                    <img class="img-responsive" src="http://www.media3.hw-static.com/wp-content/uploads/maggie-tragoedia-comoedia-crazy-heart_55012858-2560x1049.jpeg">
-                </div>                               
-            </div>
-            <!-- LISTA NOMI -->
-            <div class="row">
-                <div class="col-sm-15">Francesca Bortolotto</div>
-                <div class="col-sm-15">Alessandro Ferrari</div>
-                <div class="col-sm-15">Federico Gambarana</div>
-                <div class="col-sm-15">Arianna Meroni</div>
-                <div class="col-sm-15">Lorenzo Marchesi</div>                                   
-            </div>                          
-            <div class="row">
-                <!-- PERSONA 1 -->
+        </div>
+        <div class="row">
                 <div class="col-sm-4">
                     <div class="people_card">
                             <div class="people">
-                                <img class="img-responsive" src="http://www.bjork.fr/IMG/jpg/bjork_another_magazine_2010_5-2.jpg" alt="Persona1">
+                                <img class="img-responsive" id="foto" src="http://www.bjork.fr/IMG/jpg/bjork_another_magazine_2010_5-2.jpg" alt="Persona1">
                             </div>
                     </div>           
                     <h1>Francesca Bortolotto</h1>
@@ -61,59 +97,55 @@
                 <div class="col-sm-4">
                     <div class="people_card">
                             <div class="people">
-                                <img class="img-responsive" src="http://www.bjork.fr/IMG/jpg/bjork_another_magazine_2010_6-2.jpg" alt="Persona2">
+                                <img class="img-responsive" id="foto" src="http://www.bjork.fr/IMG/jpg/bjork_another_magazine_2010_6-2.jpg" alt="Persona2">
                             </div>
                     </div> 
                     <h1>Alessandro Ferrari</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis mauris, commodo tempus est vel, semper consequat mauris. Etiam tristique commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper sagittis lacus, vitae maximus elit pretium sed.</p>
+                    <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis mauris, commodo tempus est vel, semper consequat mauris. Etiam tristique commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper sagittis lacus, vitae maximus elit pretium sed.</p>
                 </div>
                 <!-- PERSONA 3 -->
                 <div class="col-sm-4">
                     <div class="people_card">
                             <div class="people">
-                                <img class="img-responsive" src="http://www.bjork.fr/IMG/jpg/bjork_another_magazine_2010_1-2.jpg" alt="Persona3">
+                                <img class="img-responsive" id="foto" src="http://www.bjork.fr/IMG/jpg/bjork_another_magazine_2010_1-2.jpg" alt="Persona3">
                             </div>
                     </div> 
                     <h1>Federico Gambarana</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis mauris, commodo tempus est vel, semper consequat mauris. Etiam tristique commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper sagittis lacus, vitae maximus elit pretium sed.</p>
+                    <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis mauris, commodo tempus est vel, semper consequat mauris. Etiam tristique commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper sagittis lacus, vitae maximus elit pretium sed.</p>
                 </div>
-            </div>
-            
+            </div>                        
             <div class="row">
                 <!-- PERSONA 4 -->
                 <div class="col-sm-4">
                     <div class="people_card">
                             <div class="people">
-                                <img class="img-responsive" src="http://www.bjork.fr/IMG/jpg/bjork_another_magazine_2010_8-2.jpg" alt="Persona4">
+                                <img class="img-responsive" id="foto" src="http://www.bjork.fr/IMG/jpg/bjork_another_magazine_2010_8-2.jpg" alt="Persona4">
                             </div>
                     </div> 
                     <h1>Arianna Meroni</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis mauris, commodo tempus est vel, semper consequat mauris. Etiam tristique commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper sagittis lacus, vitae maximus elit pretium sed.</p>
+                    <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis mauris, commodo tempus est vel, semper consequat mauris. Etiam tristique commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper sagittis lacus, vitae maximus elit pretium sed.</p>
                 </div>
                 <!-- PERSONA 5 -->
                 <div class="col-sm-4">
                     <div class="people_card">
                             <div class="people">
-                                <img class="img-responsive" src="http://www.bjork.fr/IMG/jpg/bjork_another_magazine_2010_4-2.jpg" alt="Persona5">
+                                <img class="img-responsive" id="foto" src="http://www.bjork.fr/IMG/jpg/bjork_another_magazine_2010_4-2.jpg" alt="Persona5">
                             </div>
                     </div> 
                     <h1>Lorenzo Marchesi</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis mauris, commodo tempus est vel, semper consequat mauris. Etiam tristique commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper sagittis lacus, vitae maximus elit pretium sed.</p>
+                    <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis mauris, commodo tempus est vel, semper consequat mauris. Etiam tristique commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper sagittis lacus, vitae maximus elit pretium sed.</p>
                 </div>
                 <!-- PERSONA 6 -->
                 <div class="col-sm-4">
                     <div class="people_card">
                             <div class="people">
-                                <img class="img-responsive" src="https://s-media-cache-ak0.pinimg.com/564x/1e/32/93/1e3293e369e51e6dfbbea965a5bd2a64.jpg" alt="Molletta">
+                                <img class="img-responsive" id="foto" src="https://s-media-cache-ak0.pinimg.com/564x/1e/32/93/1e3293e369e51e6dfbbea965a5bd2a64.jpg" alt="Molletta">
                             </div>
                     </div> 
                     <h1>Peggy</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis mauris, commodo tempus est vel, semper consequat mauris. Etiam tristique commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper sagittis lacus, vitae maximus elit pretium sed.</p>
+                    <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis mauris, commodo tempus est vel, semper consequat mauris. Etiam tristique commodo vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper sagittis lacus, vitae maximus elit pretium sed.</p>
                 </div>
             </div>
         </section>
-        <footer>            
-        </footer>
-        
-    </body>
+</body>
 </html>
