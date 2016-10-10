@@ -88,9 +88,8 @@ nav ul {
 }
 @media only screen and (max-width: 766px) {
   nav ul {
-    padding-top: 10px;
+    padding-top: 20px;
     margin-bottom: 22px;
-    float: left;
     text-align: center;
     width: 100%;
   }
