@@ -1,0 +1,128 @@
+<! DOCTYPE html>
+
+<html>
+    
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+    
+<body>
+
+<script>
+// Sticky Header
+$(window).scroll(function() {
+
+    if ($(window).scrollTop() > 100) {
+        $('.main_h').addClass('sticky');
+    } else {
+        $('.main_h').removeClass('sticky');
+    }
+});
+
+// Mobile Navigation
+$('.mobile-toggle').click(function() {
+    if ($('.main_h').hasClass('open-nav')) {
+        $('.main_h').removeClass('open-nav');
+    } else {
+        $('.main_h').addClass('open-nav');
+    }
+});
+
+$('.main_h li a').click(function() {
+    if ($('.main_h').hasClass('open-nav')) {
+        $('.navigation').removeClass('open-nav');
+        $('.main_h').removeClass('open-nav');
+    }
+});
+
+// Navigation Scroll
+$('nav a').click(function(event) {
+    var id = $(this).attr("href");
+    var offset = 70;
+    var target = $(id).offset().top - offset;
+    $('html, body').animate({
+        scrollTop: target
+    }, 500);
+    event.preventDefault();
+});
+
+</script>
+
+<!-- TITOLO PAGINA -->
+<section class="container-fluid" id="title-fix">
+    <div class="row" id="top-header">
+        <div class="col-sm-12" id=logo1>Clothes Pin Studio</div>
+    </div>
+</section>
+    
+
+<!-- INFO SUL GRUPPO -->
+<section class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 id="brief-title">May day, May day: <br> azienda chiama Clothes Pin Studio</h1>
+            <p id="sottotitolo">Brief di progetto per un brand di mollette</p>
+        </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <p class="brief">L’azienda nasce nel 2016, ma la sua storia inizia negli anni 70 del 1700.
+È la forza di una grande idea: quella di unire la semplicità, aspetto che si rifà al puritanesimo, a un
+pragmatismo moderno, caratteristiche che si concretizzano in un design minimalista e multifunzionale
+                allo stesso tempo.</p>
+<p class="brief">E’ la storia di un incontro importante, quello tra quattro imprenditori che si sono trovati a condividere un viaggio nella regione dei laghi della selvaggia Patagonia. Un viaggio tra quattro amici a bordo di un
+vecchio fuoristrada noleggiato sul luogo, nello spirito di una scoperta quasi pioneristica di questo desertico
+paesaggio argentino, che è diventato poi l’inizio di “un’avventura lavorativa”. Un guasto alla loro auto li costringe a impiegare tutto il loro ingegno per rimettersi in moto, dopo ore passate al buio e in assenza di un segnale telefonico. Quello che permette loro di ripartire è il “portafortuna” di Kurt: una molletta in legno che porta sempre con sé, in ricordo di un suo antenato appartenente al gruppo degli Shakers. La solidità ed essenzialità di quest’oggetto, presente nella tasca di una giacca, permette loro di ripristinare il contatto di un morsetto della batteria dell’auto che si è scoperto rotto.</p>
+<p class="brief"> Quella degli Shakers è stata una setta religiosa derivante dal calvinismo puritano e dedita al celibato, alla
+quale è attribuita l’invenzione della molletta da bucato. Si tramanda che gli Shakers avessero sviluppato uno stile estremamente puritano nell’abbigliamento così come nell’arredamento, spogliando ogni oggetto di qualsiasi tipo di orpello e decorazione. L’evoluzione dell’utensile, avvenuto grazie alle personalità di Smith e, più recentemente, di Maccaferri, ha portato a dimenticare l’originale e fondamentale ruolo che gli Shakers hanno avuto in tale invenzione.</p>
+<p class="brief"> I compagni di viaggio di Kurt, e lui stesso, si sono ritrovati nell’idea di riportare viva la storia di questo lontano
+passato e hanno intravisto nella filosofia di questi monaci un’opportunità per il rilancio di quest’aspetto
+positivo del loro pensiero, che avrebbe potuto essere contemporaneamente chiave per il successo: rilanciare
+una produzione di mollette che portasse il nome di un loro discendente. Una molletta appende, chiude e tiene insieme. Riesce a fare questo in tanti contesti e non solo quando si tratta di bucato!</p>
+            <p class="brief">Attualmente l’azienda produce mollette in legno, un materiale che si fa simbolo di tradizione e vuole
+implicitamente rimandare all’antica setta religiosa che le ha inventate. La visione è quindi: un design essenziale in cui la “ricchezza” dell’oggetto non sta nella scelta dei materiali o nella preziosità delle decorazioni. Un oggetto economico, composto da soli tre pezzi, ma comunque perfetto per la sua funzione. Quella degli Shakers è stata in effetti un’invenzione tanto semplice quanto funzionale. Pur ispirandosi al gruppo monastico, tuttavia, gli imprenditori scelgono chiaramente anche l’innovazione per l’avvio del prodotto nel mercato. Vogliono mettere in risalto l’idea dell’unione – un’unione materiale e simbolica. Le mollette tengono insieme oggetti ma metaforicamente uniscono le persone. L’azienda diviene quindi promotrice di un cambiamento sociale, che vorrebbe vedere realizzato e in cui vorrebbe vivere. </p>
+            <p class="brief">Siamo produttori di mollette di legno da giugno 2016, mese in cui è stata fondata la sede centrale del Massachusetts. Siamo quattro imprenditori ma intorno a noi vi è il lavoro di molte più persone, selezionate
+e garanti di massima professionalità. Ci dedichiamo alla produzione di un oggetto semplice ma assolutamente funzionale, utile nella quotidianità ma anche nell’arte e nel design, o più banalmente per le decorazioni e per il bricolage.</p>
+<p class="brief">Utilizziamo una produzione in serie che si serve di macchinari di ultima generazione e di alta tecnologia che garantiscono ottimi risultati in ogni fase: trattamenti di asciugatura, taglio, lavorazione, levigatura, assemblaggio e confezionamento. Anche la scelta dei materiali è fatta con assoluta serietà: legno di betulla proveniente dalle foreste del Vermont e acciaio. La nostra è una produzione che pur dedicata a un oggetto semplice, che deriva dalla tradizione, merita la piena responsabilità perché possa essere assolutamente affidabile e resistente.</p>
+<p class="brief"> Quello che distingue la nostra azienda dalle altre è la filosofia che sta alla base: radicamento
+dell’azienda nella tradizione e trasmissione di un’idea etica di unione, materiale e simbolica.
+Utilità e funzionalità che deriva dall’unire gli oggetti (fogli, vestiti, capelli ecc.) ma altrettanta, e ancor più,
+derivante dall’unire e dal condividere tra gli uomini: un sorriso, una gioia, un benessere, uno stile di vita
+virtuoso, una pace…</p>
+
+        </div>
+            
+        
+    </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <ul id="colophon">
+                    <li>Gruppo 1 - Clothes Pin Studio</li>
+                    <li>Laboratorio di Sintesi - C1</li>
+                    <li>Politecnico di Milano - Scuola del Design</li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <ul>
+                    <li><a href="index.html">Chi siamo</a></li>
+                    <li><a href="brief.html">Progetti</a></li>
+                    <li><a href="https://github.com/phephra/clothespinstudio">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

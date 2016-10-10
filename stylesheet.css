@@ -1,5 +1,3 @@
-@IMPORT 'https://fonts.googleapis.com/css?family=Karla';
-
 #title fixed {
     position: fixed;
 }
@@ -10,7 +8,7 @@
     position: fixed;
     z-index: 995;
     width: 100%;
-    border-bottom: 1px solid gainsboro;
+    border-bottom: 1px solid black;
     float: left;
 }
 
@@ -66,7 +64,7 @@
     background-color: rgba(255, 255, 255, 1);
     opacity: 1;
     top: 0px;
-    border-bottom: 1px solid gainsboro;
+    border-bottom: 1px solid black;
 }
 
 
@@ -107,7 +105,6 @@ nav ul li {
   }
 }
 nav ul a {
-    color: #888888;
     font-size: 18px;
     font-weight: 700;
     color: black;
@@ -157,7 +154,7 @@ nav ul a {
 
 #title-fix {
     width: 100%;
-    border-bottom: 1px solid gainsboro;
+    border-bottom: 1px solid black;
 }
 
 #slider {
@@ -236,7 +233,70 @@ a {
 
 footer {
     height: 200px;
-    border-top: 1px solid gainsboro;
+    border-top: 1px solid black;
+    position: relative;
+    margin-top: 150px;
+}
+
+footer .container {
+    margin-top: 60px;
+    width: 100%;
+}
+
+footer .container ul {
+    font-family: "GlacialIndifferenceBold", sans-serif;
+    list-style: none;
+}
+
+footer .container ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+#colophon {
+    text-align: right;
+    font-size: 18px;
+    font-family: "GlacialIndifferenceRegular", sans-serif;
+}
+
+.brief {
+    font-size: 18px;
+    text-align: justify;
+}
+
+#brief-title {
+    font-family: "GlacialIndifferenceBold", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#sottotitolo {
+    font-family: "GlacialIndifferenceBold", sans-serif;
+    font-size: 21px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 80px;
 }
 
 
