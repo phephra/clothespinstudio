@@ -13,7 +13,7 @@
 }
 
 .logo {
-    width: 280px;
+    width: auto;
     font-size: 32px;
     font-weight: 700;
     color: black;
@@ -32,7 +32,7 @@
 
 .main_h {
     position: fixed;
-    max-height: 70px;
+    max-height: 90px;
     z-index: 999;
     width: 100%;
     padding-top: 17px;
