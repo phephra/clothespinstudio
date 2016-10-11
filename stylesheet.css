@@ -270,26 +270,48 @@ a {
 }
 
 footer {
-    height: 200px;
+    height: 150px;
     border-top: 1px solid black;
     position: relative;
     margin-top: 150px;
 }
 
 footer .container {
-    margin-top: 60px;
+    margin-top: 25px;
     width: 100%;
 }
 
-footer .container ul {
+#footer-link {
     font-family: "GlacialIndifferenceBold", sans-serif;
     list-style: none;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
 }
 
-footer .container ul li a {
+#footer-link li{
+    text-align: center;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#footer-link li a {
     text-decoration: none;
-    font-size: 18px;
     color: black;
+}
+
+#colophon {
+    font-size: 12px;
+    font-family: "GlacialIndifferenceRegular", sans-serif;
+    text-align: center;
+}
+
+#colophon li{
+    text-align: center;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 a:visited {
@@ -305,12 +327,6 @@ a:hover {
 a:active {
     color: black;
     text-decoration: none;
-}
-
-#colophon {
-    text-align: right;
-    font-size: 18px;
-    font-family: "GlacialIndifferenceRegular", sans-serif;
 }
 
 .brief {
@@ -345,20 +361,28 @@ a:active {
     padding-left: 0;
     padding-right: 0;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 10px;
     float: none;
 }
 
 #data {
-    font-family: serif;
+    font-family: 'Libre Baskerville', serif;
     font-style: bold;
     font-size: 21px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     float: none;
     text-align: center;
 }
 
+#desc-presentazione {
+    font-family: "GlacialIndifferenceBold", sans-serif;
+    font-size: 21px;
+    margin-bottom: 80px;
+    float: none;
+    text-align: center;
+    line-height: 1.2;
+}
 
 //WEBKIT
 
