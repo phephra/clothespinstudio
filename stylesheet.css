@@ -89,7 +89,7 @@
 
 nav {
     float: right;
-    width: 60%;
+    width: 70%;
 }
 
 @media only screen and (max-width: 766px) {
@@ -154,8 +154,8 @@ nav ul a {
     transition: all 200ms ease-in;
 }
 @media only screen and (max-width: 766px) {
-  .mobile-toggle {
-    display: block;
+    .mobile-toggle {
+        display: block;
   }
 }
 
@@ -335,8 +335,28 @@ a:active {
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 80px;
-    position: relative;
     float: left;
+}
+
+#titolo-presentazione {
+    position: relative;
+    font-family: "GlacialIndifferenceBold", sans-serif;
+    font-size: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    float: none;
+}
+
+#data {
+    font-family: serif;
+    font-style: bold;
+    font-size: 21px;
+    margin-bottom: 80px;
+    float: none;
+    text-align: center;
 }
 
 

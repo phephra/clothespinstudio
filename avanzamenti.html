@@ -1,0 +1,121 @@
+<! DOCTYPE html>
+
+<html>
+    
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+    
+<body>
+    
+<header class="main_h">
+    <div class="row">
+        <a class="logo" href="index.html">Ciapin Studio</a>
+        <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#top-header">Chi siamo</a></li>
+                <li><a href="brief.html">Brief</a></li>
+                <li><a href="avanzamenti.html">Avanzamenti</a></li>
+                <li><a href="https://github.com/phephra/clothespinstudio">GitHub</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+// Sticky Header
+$(window).scroll(function() {
+
+    if ($(window).scrollTop() > 100) {
+        $('.main_h').addClass('sticky');
+    } else {
+        $('.main_h').removeClass('sticky');
+    }
+});
+
+// Mobile Navigation
+$('.mobile-toggle').click(function() {
+    if ($('.main_h').hasClass('open-nav')) {
+        $('.main_h').removeClass('open-nav');
+    } else {
+        $('.main_h').addClass('open-nav');
+    }
+});
+
+$('.main_h li a').click(function() {
+    if ($('.main_h').hasClass('open-nav')) {
+        $('.navigation').removeClass('open-nav');
+        $('.main_h').removeClass('open-nav');
+    }
+});
+
+// Navigation Scroll
+$('nav a').click(function(event) {
+    var id = $(this).attr("href");
+    var offset = 70;
+    var target = $(id).offset().top - offset;
+    $('html, body').animate({
+        scrollTop: target
+    }, 500);
+    event.preventDefault();
+});
+
+</script>
+
+<!-- TITOLO PAGINA -->
+<section class="container-fluid" id="title-fix">
+    <div class="row" id="top-header">
+        <div class="col-sm-12" id=logo1>Ciapin Studio</div>
+    </div>
+</section>
+    
+
+<!-- BODY -->
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 id="titolo-presentazione">Prima presentazione</h1>
+             <p id="data">11 Ottobre 2016</p>
+           
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <ul id="colophon">
+                    <li>Gruppo 1 - Ciapin Studio</li>
+                    <li>Laboratorio di Sintesi - C1</li>
+                    <li>Politecnico di Milano - Scuola del Design</li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <ul>
+                    <li><a href="index.html">Chi siamo</a></li>
+                    <li><a href="brief.html">Brief</a></li>
+                    <li><a href="brief.html">Avanzamenti</a></li>
+                    <li><a href="https://github.com/phephra/clothespinstudio">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
