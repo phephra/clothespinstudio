@@ -384,6 +384,30 @@ a:active {
     line-height: 1.2;
 }
 
+.presentazione {
+    width: 1024px;
+    align-content: center;
+}
+
+.navigator {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.w3-btn-floating {
+    font-family: "GlacialIndifferenceBlack";
+    font-size: 21px;
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.w3-btn-floating:hover {
+    color: gainsboro;
+}
+
+
 //WEBKIT
 
 @-webkit-keyframes scroll {

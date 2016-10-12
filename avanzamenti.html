@@ -83,7 +83,7 @@ $('nav a').click(function(event) {
 </section>
     
 
-<!-- BODY -->
+<!-- PRESENTAZIONE 1 -->
 
 <section class="container">
     <div class="row">
@@ -100,12 +100,111 @@ $('nav a').click(function(event) {
         <div class="col-md-3">
         </div>
         <div class="col-md-6">
+            <p id="desc-presentazione">Ricerca sulla molletta da bucato, oggetto d'uso quotidiano, definizione dei valori dell'oggetto e dell'azienda produttrice del prodotto. </p>
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+    <div class="container-fluid presentazione">
+            <img class="img-responsive slideshow" src="slides/1_1.jpg">
+            <img class="img-responsive slideshow" src="slides/1_2.jpg">
+            <img class="img-responsive slideshow" src="slides/1_3.jpg">
+            <img class="img-responsive slideshow" src="slides/1_4.jpg">
+            <img class="img-responsive slideshow" src="slides/1_5.jpg">
+            <img class="img-responsive slideshow" src="slides/1_6.jpg">
+            <img class="img-responsive slideshow" src="slides/1_7.jpg">
+            <img class="img-responsive slideshow" src="slides/1_8.jpg">
+            <img class="img-responsive slideshow" src="slides/1_9.jpg">
+            <img class="img-responsive slideshow" src="slides/1_10.jpg">
+            <img class="img-responsive slideshow" src="slides/1_11.jpg">
+            <img class="img-responsive slideshow" src="slides/1_12.jpg">
+            <img class="img-responsive slideshow" src="slides/1_13.jpg">
+            <img class="img-responsive slideshow" src="slides/1_14.jpg">
+            <img class="img-responsive slideshow" src="slides/1_15.jpg">
+            <img class="img-responsive slideshow" src="slides/1_16.jpg">
+            <img class="img-responsive slideshow" src="slides/1_17.jpg">
+            <img class="img-responsive slideshow" src="slides/1_18.jpg">
+            <img class="img-responsive slideshow" src="slides/1_19.jpg">
+            <img class="img-responsive slideshow" src="slides/1_20.jpg">
+        </div>
+    <div class="row">
+        <div class="col-md-12 navigator">
+            <a class="w3-btn-floating" onclick="plusDivs(-1)">&#10094;</a>
+            <a class="w3-btn-floating" onclick="plusDivs(+1)">&#10095;</a>
+        </div>
+    </div>
+    
+</section>
+
+<!-- PRESENTAZIONE 2 -->
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+            <h1 id="titolo-presentazione">Seconda presentazione</h1>
+            <p id="data">- 11 Ottobre 2016 - </p>            
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
             <p id="desc-presentazione">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit viverra magna sed imperdiet. </p>
         </div>
         <div class="col-md-3">
         </div>
     </div>
 </section>
+    
+<!-- PRESENTAZIONE 3 -->
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+            <h1 id="titolo-presentazione">Terza presentazione</h1>
+            <p id="data">- 11 Ottobre 2016 - </p>            
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+            <p id="desc-presentazione">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit viverra magna sed imperdiet. </p>
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+</section>
+    
+<!-- SCRIPT SLIDESHOW -->
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("slideshow");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}    
+</script>
 
 
 <!-- FOOTER -->
@@ -116,7 +215,7 @@ $('nav a').click(function(event) {
                 <ul id="footer-link">
                     <li><a href="index.html">Chi siamo</a></li>
                     <li><a href="brief.html">Brief</a></li>
-                    <li><a href="brief.html">Avanzamenti</a></li>
+                    <li><a href="avanzamenti.html">Avanzamenti</a></li>
                     <li><a href="https://github.com/phephra/clothespinstudio">GitHub</a></li>
                 </ul>
             </div>            
