@@ -417,6 +417,13 @@ a:active {
     text-align: center;
 }
 
+.download2{
+    font-family: "GlacialIndifferenceBold", sans-serif;
+    font-size: 21px;
+    display: block;
+    text-decoration: none;
+}
+
 .presentazione {
     width: auto;
     align-content: center;
@@ -440,6 +447,10 @@ a:active {
     color: gainsboro;
 }
 
+video {
+    max-width: 100%;
+    height: auto;
+}
 
 //WEBKIT
 
